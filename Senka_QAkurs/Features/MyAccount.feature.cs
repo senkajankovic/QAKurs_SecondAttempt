@@ -132,29 +132,6 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User can add product to cart")]
-        [NUnit.Framework.CategoryAttribute("Cart")]
-        public virtual void UserCanAddProductToCart()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User can add product to cart", new string[] {
-                        "Cart"});
-#line 31
-this.ScenarioSetup(scenarioInfo);
-#line 32
- testRunner.Given("user opens \'Dresses\' section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 33
- testRunner.And("user selects a product", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 34
- testRunner.And("increases quantity to 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 35
- testRunner.When("user submits Add to cart button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 36
- testRunner.Then("product is added to cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
     }
 }
 #pragma warning restore

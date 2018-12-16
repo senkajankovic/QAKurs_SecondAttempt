@@ -78,6 +78,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MyAccount.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\ProductDetailsPage.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductDetailsPage.feature</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\Base.cs" />
     <Compile Include="Helpers\TestConstants.cs" />
     <Compile Include="Helpers\Utilities.cs" />
@@ -95,6 +100,10 @@
     <None Include="Features\MyAccount.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>MyAccount.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\ProductDetailsPage.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ProductDetailsPage.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
