@@ -27,3 +27,10 @@ Scenario: User can create an account
 	Then user will be logged in
 	And user's full name is displayed
 
+@Cart
+Scenario: User can add product to cart
+	Given user opens 'Dresses' section
+	And user selects a product
+	When user submits Add to cart button
+	Then product is added to cart
+
