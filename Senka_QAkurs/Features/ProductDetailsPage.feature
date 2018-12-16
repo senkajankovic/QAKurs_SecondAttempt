@@ -11,4 +11,3 @@ Scenario: User can add product to cart
 	When user submits Add to cart button
 	Then product is added to cart
 
-
