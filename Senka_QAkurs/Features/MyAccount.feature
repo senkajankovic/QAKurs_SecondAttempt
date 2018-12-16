@@ -33,4 +33,6 @@ Scenario: User can add product to cart
 	And user selects a product
 	When user submits Add to cart button
 	Then product is added to cart
+	And test
+
 
