@@ -13,7 +13,7 @@ namespace Senka_QAkurs.Pages
         readonly IWebDriver driver;
 
         public By dressesList = By.CssSelector(".right-block [title='Printed Dress']");
-
+        public By resultsList = By.CssSelector(".product-container .product-name");
         public ProductListPage(IWebDriver driver)
         {
             this.driver = driver;

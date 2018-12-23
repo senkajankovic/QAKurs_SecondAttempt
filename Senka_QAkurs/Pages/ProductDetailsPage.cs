@@ -13,6 +13,8 @@ namespace Senka_QAkurs.Pages
         readonly IWebDriver driver;
         public By quantity = By.Id("quantity_wanted");
         public By addToCartBtn = By.Id("add_to_cart");
+        public By productName = By.XPath("//*[@id='center_column']/div/div/div[3]/h1");
+        public By productReference = By.Id("product_reference");
         public ProductDetailsPage(IWebDriver driver)
         {
             this.driver = driver;

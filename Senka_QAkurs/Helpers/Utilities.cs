@@ -57,5 +57,15 @@ namespace Senka_QAkurs.Helpers
             return wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(textElement));
             
         }
+
+        public string ReturnTextFromElement(By selector)
+        {
+            return driver.FindElement(selector).GetAttribute("textContent");
+        }
+
+        public string ReturnValueFromElement(By selector)
+        {
+            return driver.FindElement(selector).GetAttribute("value");
+        }
     }
 }
