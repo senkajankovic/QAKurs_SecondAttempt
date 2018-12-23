@@ -13,7 +13,7 @@ namespace Senka_QAkurs.Pages
         readonly IWebDriver driver;
 
         public By SignIn = By.ClassName("login");
-
+        public By DressesBtn = By.CssSelector(".sf-menu [title='Dresses']");
         public HomePage(IWebDriver driver)
         {
             this.driver = driver;

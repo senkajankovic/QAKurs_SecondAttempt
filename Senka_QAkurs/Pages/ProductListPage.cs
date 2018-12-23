@@ -12,13 +12,13 @@ namespace Senka_QAkurs.Pages
     {
         readonly IWebDriver driver;
 
-        public By FirstImageSelection = By.XPath("//*[@id='center_column']/ul/li[1]/div/div[1]/div/a[1]");
+        public By dressesList = By.CssSelector(".right-block [title='Printed Dress']");
 
         public ProductListPage(IWebDriver driver)
         {
             this.driver = driver;
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id("category")));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.CssSelector(".container .breadcrumb [title='Women'")));
 
         }
 
