@@ -98,6 +98,7 @@
     <Compile Include="Pages\MyAccountPage.cs" />
     <Compile Include="Pages\MyWishlistPage.cs" />
     <Compile Include="Pages\ProductDetailsPage.cs" />
+    <Compile Include="Pages\SearchResultsListPage.cs" />
     <Compile Include="Pages\ShoppingCartPage.cs" />
     <Compile Include="Pages\SignUpPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

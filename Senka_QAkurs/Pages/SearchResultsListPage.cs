@@ -8,18 +8,16 @@ using System.Threading.Tasks;
 
 namespace Senka_QAkurs.Pages
 {
-    class ProductListPage
+    class SearchResultsListPage
     {
         readonly IWebDriver driver;
+        public By results = By.CssSelector(".product-container .product-name");
 
-        public By dressesList = By.CssSelector(".right-block [title='Printed Dress']");
-        public ProductListPage(IWebDriver driver)
+        public SearchResultsListPage(IWebDriver driver)
         {
             this.driver = driver;
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.CssSelector(".container .breadcrumb [title='Women'")));
-
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.CssSelector("#center_column .product_list")));
         }
-
     }
 }

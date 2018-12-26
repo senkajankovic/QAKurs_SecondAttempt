@@ -33,10 +33,18 @@ namespace Senka_QAkurs.Steps
         public void ThenListOfResultsIncludingKeywordDisplays(string keyword)
         {
             Utilities ut = new Utilities(Driver);
-            ProductListPage plp = new ProductListPage(Driver);
-            IList<IWebElement> results = Driver.FindElements(plp.resultsList);
-            Assert.Contains(keyword, results);
-            ovako seporedi lista elemenata i stringova, moraju da budu istog tipa da bi se poredili
+            SearchResultsListPage srlp = new SearchResultsListPage(Driver);
+            IList<IWebElement> results = Driver.FindElements(srlp.results);
+            int resultsCount = results.Count;
+            string title = null;
+            for (int i = 0; i < resultsCount - 1; i++)
+            {
+                title = results[i].GetAttribute("title");
+
+                Assert.True(title.Contains(keyword));
+            }
+
+
 
 
 
