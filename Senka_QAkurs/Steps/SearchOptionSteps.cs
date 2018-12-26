@@ -2,8 +2,6 @@
 using OpenQA.Selenium;
 using Senka_QAkurs.Helpers;
 using Senka_QAkurs.Pages;
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using TechTalk.SpecFlow;
 
