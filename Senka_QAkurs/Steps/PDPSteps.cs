@@ -75,9 +75,9 @@ namespace Senka_QAkurs.Steps
             Utilities ut = new Utilities(Driver);
             ShoppingCartPage scp = new ShoppingCartPage(Driver);
             string qtyInCart = ut.ReturnValueFromElement(scp.quantityInCart);
-            //string expectedQty = TestConstants.Quantity;
             Assert.AreEqual(qty, qtyInCart, "Quantity of product in cart is not correct");
         }
+
 
 
     }

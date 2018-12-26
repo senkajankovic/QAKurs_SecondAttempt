@@ -26,7 +26,6 @@ namespace Senka_QAkurs.Helpers
 
 
         //Cart
-        public const string Quantity = "2";
         public const string ProductName = "";
 
     }
