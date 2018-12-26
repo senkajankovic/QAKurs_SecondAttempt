@@ -39,7 +39,7 @@ namespace Senka_QAkurs.Steps
             {                                                                   //Za svaki rezultat iz liste rezultata, vrednost atributa title smestam u string title
                 title = results[i].GetAttribute("title");                       //brojac i treba da bude za 1 manji od resultCount jer pocinje od 0
 
-                Assert.True(title.Contains(keyword));                           //i proveravam da li sadrzi kljucnu rec zadatu u SpecFlow-u
+                Assert.True(title.Contains(keyword), "Proizvod '" +title+ "' ne sadrzi kljucnu rec");                           //i proveravam da li sadrzi kljucnu rec zadatu u SpecFlow-u
             }
 
 

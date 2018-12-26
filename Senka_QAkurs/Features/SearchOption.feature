@@ -5,6 +5,6 @@
 
 @Search
 Scenario: Search products by keyword
-	Given user enters a word 'dress' into serach box
+	Given user enters a word 'Dress' into serach box
 	When click on button search
-	Then list of results including 'dress' displays
+	Then list of results including 'Dress' displays
