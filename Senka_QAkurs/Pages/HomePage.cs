@@ -13,6 +13,7 @@ namespace Senka_QAkurs.Pages
         readonly IWebDriver driver;
 
         public By SignIn = By.ClassName("login");
+        public By ContactUsBtn = By.Id("contact-link");
         public By DressesBtn = By.CssSelector(".sf-menu [title='Dresses']");
         public By SearchBox = By.Id("search_query_top");
         public By SearchBtn = By.CssSelector("#searchbox .btn");

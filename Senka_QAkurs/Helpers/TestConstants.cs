@@ -28,5 +28,8 @@ namespace Senka_QAkurs.Helpers
         //Cart
         public const string ProductName = "";
 
+        //Contact us
+        public const string textMessage = "Some random text for testing purposes only";
+
     }
 }
