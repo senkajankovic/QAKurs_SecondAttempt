@@ -72,7 +72,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Features\ContactUs.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -93,12 +92,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SearchOption.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\Footer.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Footer.feature</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\Base.cs" />
     <Compile Include="Helpers\TestConstants.cs" />
     <Compile Include="Helpers\Utilities.cs" />
     <Compile Include="Pages\AuthenticationPage.cs" />
     <Compile Include="Pages\CartOverlayPage.cs" />
     <Compile Include="Pages\ContactUsPage.cs" />
+    <Compile Include="Pages\FooterPage.cs" />
     <Compile Include="Pages\ProductListPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\MyAccountPage.cs" />
@@ -109,6 +114,7 @@
     <Compile Include="Pages\SignUpPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\ContactUsSteps.cs" />
+    <Compile Include="Steps\FooterLinksSteps.cs" />
     <Compile Include="Steps\PDPSteps.cs" />
     <Compile Include="Steps\MyAccountSteps.cs" />
     <Compile Include="Steps\SearchOptionSteps.cs" />
@@ -130,6 +136,10 @@
     <None Include="Features\SearchOption.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SearchOption.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Footer.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Footer.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

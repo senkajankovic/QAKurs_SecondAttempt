@@ -8,7 +8,7 @@ namespace Senka_QAkurs.Steps
     [Binding]
     public class ContactUsSteps : Base
     {
-        Utilities ut = new Utilities(Driver);
+       readonly Utilities ut = new Utilities(Driver);
 
         [Given(@"user clicks on Contact Us button")]
         public void GivenUserClicksOnContactUsButton()
