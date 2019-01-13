@@ -1,0 +1,14 @@
+1.
+SELECT * FROM Laptops
+WHERE Laptop='HP'
+
+2.
+INSERT INTO Laptops
+WHERE Name='Marko' AND Laptop='Asus'
+
+3.
+DELETE FROM Laptops
+WHERE Name='Nenad'
+
+4.
+UPDATE Laptops SET Laptop='Dell' WHERE Id=4 

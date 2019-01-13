@@ -3,10 +3,75 @@
 	As a user
 	I want to send a message
 
-@mytag
-Scenario: UserSendsMessageToProvider
-	Given user clicks on Contact Us button
-	And enters data into mandatory fields
-	And select 'Customer service' from subject heading drop-down
-	When user clicks Send button
-	Then 'Your message has been successfully sent to our team' message should be displayed
+	@ContactUs
+	Scenario: UserSendsMessageToProvider
+		Given user clicks on Contact Us button
+		And enters data into mandatory fields
+		And select 'Customer service' from subject heading drop-down
+		When user clicks Send button
+		Then 'Your message has been successfully sent to our team' message should be displayed
+#
+#@PageView
+#Scenario: PageLooksAsExpected
+#Given user clicks on Contact Us button
+#When Contact us page is loaded 
+#Then all documented elements are present
+#
+#@MandatoryFields
+#Scenario: SubjectHeadingIsMandatoryField
+#Given user clicks on Contact Us button
+#And enters data into field 'Email address'
+#And Add file to Attach File field
+#And enters data into field 'Message'
+#When user clicks Send button
+#Then Message should not be sent
+#And Error message 'Please select a subject from the list provided.' should be displayed
+#
+#@MandatoryFields
+#Scenario: EmailAddressIsMandatoryField
+#Given user clicks on Contact Us button
+#And selects option from Subject Heading drop-down
+#And Add file to Attach File field
+#And enters data into field 'Message'
+#When user clicks Send button
+#Then Message should not be sent
+#And Error message 'Invalid email address.' should be displayed
+#
+#@MandatoryFields
+#Scenario: AttachFileIsMandatoryField
+#Given user clicks on Contact Us button
+#And selects option from Subject Heading drop-down
+#And enters data into field 'Email address'
+#And enters data into field 'Message'
+#When user clicks Send button
+#Then Message should not be sent
+#And Error message 'The message should have attached file.' should be displayed
+#
+#@MandatoryFields
+#Scenario: MessageIsMandatoryField
+#Given user clicks on Contact Us button
+#And selects option from Subject Heading drop-down
+#And enters data into field 'Email address'
+#And Add file to Attach File field
+#When user clicks Send button
+#Then Message should not be sent
+#And Error message 'The message cannot be blank.' should be displayed
+#
+#@EmailPopulate
+#Scenario: EmailAddressFieldIsPrepopulatedWhenUserLoggedIn
+#Given user opens sign in page
+#And enters correct credentials
+#And user submits the login form
+#When user clicks on Contact Us button
+#Then 'Email Address' field is already populated
+#
+#@ValidationMessage
+#Scenario: ValidationMessageShouldBeDispalyed
+#Given user clicks on Contact Us button
+#And user enters all mandatory fields
+#When user clicks Send button
+#Then 'Your message has been successfully sent to our team' message should be displayed
+#
+#
+#
+#

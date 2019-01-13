@@ -10,7 +10,7 @@ namespace Senka_QAkurs.Steps
     {
        readonly Utilities ut = new Utilities(Driver);
 
-        [Given(@"user clicks on Contact Us button")]
+        [StepDefinition(@"user clicks on Contact Us button")]
         public void GivenUserClicksOnContactUsButton()
         {
             //Utilities ut = new Utilities(Driver);

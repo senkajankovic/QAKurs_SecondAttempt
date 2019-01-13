@@ -1,0 +1,29 @@
+Beleske sa poslendnjih casova (12.1.2019)
+-osnovni principi testiranja
+- Vrste testiranja
+	Exploratory testing - bez ikakvih TCeva ili plana tek nakon sto se iscrpelo manuelno testiranje functional
+	Sanity - prosireni smoke test (oko 45min). Smoke traje oko 15min
+	Regression - da li je izmena na aplikaciji uticala na funkcionalnosti koje su ranije radile korektno
+	Performance - brzina rada se ispituje bez previse opterecenja
+?? KAko odrediti tipove tiketa (task, bug, story, epic,..) Epic i story definise business, taskovi su razbijen story, testiranje je bolje
+kada se testira ceo story a ne svaki pojedinacni task jednog storija
+
+- Definition of ready - uslovi kada je tiket spreman da se pocne sa radom (acceptance criteria, dokumentacija moraju da postoje) 
+- Definition of Done - uslovi kada moze da se smatra da je tiket gotov (acceptance criteria, dokumentacija moraju da postoje) 
+
+- Test suit - glomazni flow-ovi koji pokrivaju cele odredjene aktivnosti (npr. od biranja proizvoda o checkouta)
+
+-Hybridne applikacije su kombinovana web applikacija koja u nekom trenutku koristi aplikacije sa telefona. Npr klik na neko dugme, pokrece se 
+kamera koja je native applikacija na telefonu
+
+-Litmus - alat za testiranje email prijema (email klijenti: gmail, yahoo, outlook,...)
+- Checklista za testianje mobilnih aplikacija (ppt)
+
+- Redirectpath- alat za "hvatanje" redirekcija ukoliko postoje. 
+- Data Layer slicno GA i GTA funkcijama
+
+- Alati za deployment coda: Teamcity, Octopus
+Teamcity poziva Octopus za deployment, a on sam sluzi za pripremanje, buildovanje, pokretanje automatskih testova,...
+
+- SQL management studio. Kada se pisu automatski testovi moguce je u konfig fajlu definisati pristup bazi i onda se prilikom izvrsavanja testa, desi 
+konekcija ka bazi a onda izvrsavaju upiti koji koriste podatke iz baze
